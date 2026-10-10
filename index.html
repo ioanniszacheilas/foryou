@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Μόνο για σένα ♡</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f7ede5;color:#543334;font-family:Arial,sans-serif;min-height:100svh;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 15% 20%,#f4d4d5,transparent 45%),radial-gradient(ellipse at 85% 80%,#eed9c4,transparent 45%)}main{position:relative;max-width:760px;margin:auto;padding:35px 24px;text-align:center}.eyebrow{font-size:11px;letter-spacing:3px;color:#976f65}.small-heart{font:32px Georgia;color:#a74554;margin:20px}h1{font:normal clamp(42px,8vw,70px)/1.12 Georgia,serif;letter-spacing:-2px;margin:15px 0}h1 em{color:#a74554}.intro{font-size:15px;line-height:1.8;color:#886a62;margin:20px auto}.envelope{width:260px;height:170px;margin:30px auto 20px;position:relative;background:#ead0bd;border-radius:4px 4px 10px 10px;box-shadow:0 20px 35px #8a584523;transform:rotate(-5deg)}.envelope:before{content:"";position:absolute;inset:0;background:#e4bea9;clip-path:polygon(0 0,100% 0,50% 60%)}.envelope:after{content:"";position:absolute;inset:0;background:#f0dac9;clip-path:polygon(0 15%,50% 68%,100% 15%,100% 100%,0 100%);border-radius:0 0 10px 10px}.seal{position:absolute;z-index:1;left:calc(50% - 25px);top:74px;width:50px;height:50px;border-radius:50%;background:#aa4757;color:#ffe9df;display:grid;place-items:center;font-size:26px;box-shadow:0 3px 8px #8a384740}.scribble{font:italic 17px Georgia;color:#926c62;margin:22px 0}.button-area{min-height:80px;display:grid;place-items:center}button{font:inherit;border:0;cursor:pointer;border-radius:100px;padding:17px 30px;background:#a74554;color:#fff4ed;box-shadow:0 8px 22px #a7455428;transition:transform .25s,background .25s}button:hover{background:#913b48}button:focus-visible{outline:3px solid #543334;outline-offset:5px}button:disabled{cursor:default;opacity:.5}.hint{font-size:12px;color:#91796f;min-height:20px;margin:8px 0 28px}footer{font:italic 13px Georgia;color:#91796f;margin:30px 0}.letter{background:#fffbf4;border:1px solid #e8d7c8;border-radius:12px;padding:34px clamp(22px,6vw,50px);text-align:left;box-shadow:0 16px 45px #80533a15;margin:28px auto;animation:appear .8s both;position:relative}.letter:before{content:"♡";position:absolute;right:25px;top:20px;font-size:35px;color:#bd7b82}.letter h2{font:italic 31px Georgia;color:#a74554;margin:12px 0 25px}.letter p{font:18px/1.9 Georgia,serif}.letter .signature{font-style:italic;color:#a74554;text-align:right;margin-top:26px}.tag{font-size:10px;letter-spacing:3px;color:#9c7b6d}.extra{color:#a74554;font:italic 20px/1.6 Georgia;min-height:64px;margin-top:24px}.secondary{background:transparent;color:#a74554;border:1px solid #c9a09c;box-shadow:none;font-size:13px;padding:13px 22px}.secondary:hover{background:#f1ded7}.particle{position:fixed;pointer-events:none;z-index:3;color:#b75265;animation:float 3s ease-out forwards;font-size:22px}.game{max-width:380px;margin:24px auto;background:#fff9f180;border:1px solid #e4c9bc;border-radius:22px;padding:18px}.game-title{font:italic 21px Georgia;margin:0 0 8px}.garden{height:145px;position:relative;margin:12px 0;background:radial-gradient(ellipse at bottom,#f0d5d6,transparent 70%);border-radius:15px}.catch{position:absolute;width:58px;height:58px;padding:0;font-size:30px;display:grid;place-items:center;background:#fff8ef;color:#a74554;border:1px solid #e8bdc2;box-shadow:0 5px 15px #a7455418}.counter{font-size:13px;color:#89675e}.skip{display:block;margin:12px auto 0;background:none;box-shadow:none;color:#8e6b63;text-decoration:underline;font-size:12px;padding:8px}.skip:hover{background:none}.rose{font-size:36px;margin:15px 0}[hidden]{display:none!important}@keyframes appear{from{opacity:0;transform:translateY(25px) rotate(-2deg)}to{opacity:1;transform:none}}@keyframes float{from{opacity:0;transform:translateY(10px)}20%{opacity:1}to{opacity:0;transform:translateY(-65vh) rotate(35deg)}}@media(max-width:480px){main{padding-top:25px}.letter p{font-size:17px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.particle{display:none}}
+</style>
+</head>
+<body>
+<main>
+<div class="eyebrow">Μια μικρή έκπληξη · μια μεγάλη αγάπη</div>
+<div class="small-heart" aria-hidden="true">♡</div>
+<h1>Ο κόσμος μου,<br>λίγο πιο <em>όμορφος.</em></h1>
+<p class="intro">Από τότε που είσαι μέσα του.<br>Σου άφησα κάτι εδώ. Είναι μόνο για σένα.</p>
+<section id="closed" aria-label="Ένα γράμμα για σένα">
+<div class="envelope" aria-hidden="true"><span class="seal">♥</span></div>
+<p class="scribble">προς: το αγαπημένο μου χαμόγελο</p>
+<div class="game" id="game">
+<p class="game-title">Πέντε καρδούλες για μια έκπληξη</p>
+<div class="counter" id="counter" role="status">Μάζεψε τις καρδούλες: 0 / 5 ♡</div>
+<div class="garden" id="garden">
+<button class="catch" id="catch" type="button" aria-label="Μάζεψε την καρδούλα" style="left:calc(50% - 29px);top:40px">♥</button>
+</div>
+<button id="skip" class="skip" type="button">Ανυπομονώ… θέλω το γράμμα τώρα</button>
+</div>
+<div class="button-area"><button id="open" disabled type="button" aria-controls="opened" aria-expanded="false">Άνοιξε την έκπληξή σου ♡</button></div>
+<p id="hint" class="hint" aria-live="polite">Πέντε μικρά κλικ και η καρδιά μου ανοίγει.</p>
+</section>
+<section id="opened" hidden>
+<article class="letter" tabindex="-1" id="letter">
+<div class="tag">Για σένα, με όλη μου την καρδιά</div>
+<h2>Αγάπη μου,</h2>
+<div class="rose" aria-hidden="true">🌹</div>
+<p>Πιστεύω πως <strong>ο Θεός με έφερε σε εσένα και εσένα σε εμένα.</strong> Και κάθε μέρα Τον ευχαριστώ που οι δρόμοι μας συναντήθηκαν.</p>
+<p>Η ζωή μας είναι σαν εκείνο το <strong>κόκκινο τριαντάφυλλο που σου είχα δώσει</strong>: όμορφη, αλλά και γεμάτη εμπόδια, σαν τα αγκάθια του. Θέλω να κρατάμε την ομορφιά του και να αντιμετωπίζουμε κάθε αγκάθι μαζί, χέρι χέρι.</p>
+<p>Θέλω να ζήσουμε μια ολόκληρη ζωή μαζί. Να γεράσουμε παρέα, να στηρίζουμε ο ένας τον άλλον και να γεμίσουμε τις μέρες μας με αγάπη, πίστη και μικρές στιγμές ευτυχίας.</p>
+<p>Και όταν, ύστερα από πολλά όμορφα χρόνια, ολοκληρωθεί το ταξίδι μας σε αυτή τη ζωή, η προσευχή μου είναι να βρεθούμε μαζί και στον ουρανό, στην κατοικία του Θεού.</p>
+<p>Γιατί με τον άνθρωπό μου θέλω να γίνω ένα. Με αυτόν τον άνθρωπο θέλω να μοιράζομαι <strong>γη και ουρανό.</strong></p>
+<p><strong>Αυτός ο άνθρωπος είσαι εσύ.</strong></p>
+<p class="signature">Σε διαλέγω. Σήμερα και κάθε μέρα. ♡<br>Ο δικός σου</p>
+</article>
+<button id="more" class="secondary" type="button">Κι ένα ακόμα μικρό μυστικό… ♡</button>
+<p id="extra" class="extra" aria-live="polite"></p>
+</section>
+<footer>Φτιαγμένο με αγάπη. Και λίγη αδυναμία για σένα.</footer>
+</main>
+<script>
+const openButton=document.getElementById('open');
+let teased=false,collected=0;
+const catchButton=document.getElementById('catch');
+function unlock(){
+ openButton.disabled=false;
+ document.getElementById('game').hidden=true;
+ document.getElementById('hint').textContent='Το γράμμα σου είναι έτοιμο. Και η καρδιά μου δική σου. ♡';
+ openButton.focus({preventScroll:true});
+}
+catchButton.addEventListener('click',()=>{
+ collected++;
+ document.getElementById('counter').textContent='Μάζεψε τις καρδούλες: '+collected+' / 5 ♥';
+ hearts();
+ if(collected===5){unlock();return;}
+ const garden=document.getElementById('garden');
+ catchButton.style.left=Math.round(Math.random()*Math.max(0,garden.clientWidth-58))+'px';
+ catchButton.style.top=Math.round(Math.random()*(garden.clientHeight-58))+'px';
+});
+document.getElementById('skip').addEventListener('click',()=>{unlock();openButton.click();});
+openButton.addEventListener('pointerenter',(event)=>{
+ if(openButton.disabled || teased || event.pointerType!=='mouse' || matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ teased=true;
+ openButton.style.transform='translateX(24px) rotate(3deg)';
+ document.getElementById('hint').textContent='Εντάξει, λίγο νάζι το κάνω. Πάτα με! 😇';
+ setTimeout(()=>openButton.style.transform='',550);
+});
+function hearts(){
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ for(let i=0;i<24;i++)setTimeout(()=>{
+  const heart=document.createElement('span');
+  heart.className='particle';
+  heart.textContent=['♥','♡','✦'][i%3];
+  heart.setAttribute('aria-hidden','true');
+  heart.style.left=(8+Math.random()*84)+'vw';
+  heart.style.top=(70+Math.random()*25)+'vh';
+  heart.style.fontSize=(14+Math.random()*22)+'px';
+  document.body.appendChild(heart);
+  setTimeout(()=>heart.remove(),3100);
+ },i*65);
+}
+openButton.addEventListener('click',()=>{
+ openButton.setAttribute('aria-expanded','true');
+ document.getElementById('closed').hidden=true;
+ document.getElementById('opened').hidden=false;
+ document.getElementById('letter').focus({preventScroll:true});
+ hearts();
+});
+const secrets=[
+'Το αγαπημένο μου μέρος δεν είναι μέρος. Είναι δίπλα σου. ♡',
+'Έχεις το πιο επικίνδυνο χαμόγελο. Μου κλέβει την καρδιά κάθε φορά.',
+'Μαζί σου, ακόμα και το «τίποτα» είναι κάτι όμορφο.',
+'Αν ξανάρχιζα την ιστορία μου, πάλι θα ήθελα να σε συναντήσω.',
+'Υ.Γ. Σου χρωστάω μια αγκαλιά. Εντάξει… πολλές.'
+];
+let secretIndex=0;
+document.getElementById('more').addEventListener('click',()=>{
+ document.getElementById('extra').textContent=secrets[secretIndex++%secrets.length];
+ hearts();
+});
+</script>
+</body>
+</html>
